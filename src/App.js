@@ -1,24 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import { PersonCard } from './Components/PersonCard';
+
+const datos = [{
+  firstName: 'pepe',
+  lastName: 'apellido1',
+  age: 33,
+  hairColor: 'brown'
+  },
+  {
+    firstName: 'pepe2',
+    lastName: 'apellido2',
+    age: 45,
+    hairColor: 'brown'
+  },
+  {
+    firstName: 'pepe3',
+    lastName: 'apellido3',
+    age: 22,
+    hairColor: 'blue'
+  },
+  {
+    firstName: 'pepe4',
+    lastName: 'apellido4',
+    age: 99,
+    hairColor: 'black'
+  },
+  
+  
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <PersonCard datos={datos}/>
+    </>
   );
 }
 
