@@ -20,7 +20,7 @@ export const PersonCard = ({datos}) => {
                             <li name="age">Age: {age}</li>
                             <li>Color: {datos.hairColor}</li>
                         </ul>
-                        <button onClick={handleCount }>Click Me</button>
+                        <button onClick={handleCount }>Cumpleaños</button>
                         </Card.Text>
                     </Card.Body>
                 </Card>
