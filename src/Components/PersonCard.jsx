@@ -3,10 +3,10 @@ import Card from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';
 export const PersonCard = ({datos}) => {
     console.log(datos);
-    const [count, setCount] = useState(datos.age);
+    const [age, setAge] = useState(datos.age);
     //const {firstName, lastName, age, hairColor} = count;
     const handleCount = () =>{
-        setCount(count+1)
+        setAge(age+1)
     }
     return (
         <div>   
@@ -17,7 +17,7 @@ export const PersonCard = ({datos}) => {
                     <Card.Body>
                         <Card.Text>
                         <ul>
-                            <li name="count">Age: {count}</li>
+                            <li name="age">Age: {age}</li>
                             <li>Color: {datos.hairColor}</li>
                         </ul>
                         <button onClick={handleCount }>Click Me</button>
