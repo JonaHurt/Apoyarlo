@@ -1,39 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
 import { PersonCard } from './Components/PersonCard';
+import { useState } from 'react';
 
 const datos = [{
-  firstName: 'pepe',
-  lastName: 'apellido1',
-  age: 33,
+  firstName: 'nombre 1',
+  lastName: 'apellido 1',
+  age: 20,
   hairColor: 'brown'
   },
   {
-    firstName: 'pepe2',
-    lastName: 'apellido2',
-    age: 45,
-    hairColor: 'brown'
+  firstName: 'nomnre 2',
+  lastName: 'apellido 2',
+  age: 30,
+  hairColor: 'brown'
   },
   {
-    firstName: 'pepe3',
-    lastName: 'apellido3',
-    age: 22,
-    hairColor: 'blue'
+  firstName: 'Nombre 3',
+  lastName: 'Apellido 3',
+  age: 25,
+  hairColor: 'brown'
   },
   {
-    firstName: 'pepe4',
-    lastName: 'apellido4',
-    age: 99,
-    hairColor: 'black'
-  },
-  
-  
-]
+  firstName: 'Nombre 4',
+  lastName: 'Apellido 4',
+  age: 35,
+  hairColor: 'brown'
+  }
+];
 
 function App() {
   return (
     <>
-      <PersonCard datos={datos}/>
+
+    {datos?.map((datos)=>(
+       <PersonCard datos={datos}/>)
+    )}
+     
     </>
   );
 }
